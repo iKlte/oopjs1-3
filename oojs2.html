@@ -1,0 +1,19 @@
+<script>
+class Shape {
+	constructor(name,sides,sideLength){
+		this.name = name;
+		this.sides = sides;
+		this.sideLength = sideLength;
+		this.calcPerimeter = function(){
+			var calcPerimeter = sides * sideLength;
+			console.log(calcPerimeter);
+		};
+	}
+}
+
+let square = new Shape('Square',4,5);
+let triangle = new Shape('Triangle',3,3);
+
+square.calcPerimeter();
+triangle.calcPerimeter();
+</script>

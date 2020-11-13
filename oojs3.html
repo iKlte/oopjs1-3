@@ -1,0 +1,24 @@
+<script>
+class Shape {
+	constructor(name,sides,sideLength){
+		this.name = name;
+		this.sides = sides;
+		this.sideLength = sideLength;
+		this.calcPerimeter = function(){
+			var calcPerimeter = sides * sideLength;
+			console.log(calcPerimeter);
+		};
+	}
+}
+
+class Square extends Shape{
+	calcArea(){
+		this.sides = 4;
+		this.sideLength = 5;
+		var calcArea = Math.pow(this.sideLength,2);
+		console.log(calcArea);
+	}
+}
+let square = new Square('Square');
+square.calcArea();
+</script>
